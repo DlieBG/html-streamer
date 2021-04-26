@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/mediaelementplayer.min.css">
+        <title>Livestream</title>
+    </head>
+    <body>
+
+        <div id="body">
+                <h3>Livestream</h3>
+                <div class="media-wrapper">
+                    <video id="player" width="1920" height="1080" style="max-width:100%;">
+                        <source src="live/stream.m3u8">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <script src="build/mediaelement-and-player.min.js"></script>
+        <script>var player = new MediaElementPlayer('player', { pluginPath: "build" });</script>
+    </body>
+</html>
